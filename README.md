@@ -1,5 +1,5 @@
 # AudiBooking
-An auditorium management software based on Python Flask.
+An auditorium management software based on Python Flask. This project was created for the course CS29202 as its term project.
 
 ## Dependencies
 1. flask
