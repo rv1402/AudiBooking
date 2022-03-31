@@ -12,7 +12,14 @@ An auditorium management software based on Python Flask. This project was create
 
 ## Notes
 This software runs on local machine and supports three categories of users: *Managers*, *Salespeople* and *Accounts Clerks*.
-OTP based login is supported. The default email address of manager is set as: *manager.officer.12345@gmail.com*. This manager can create other employees who can have their own email IDs. To change the manager's email address, open `site.db` and 
+OTP based login is supported. The default email address of manager is set as: *manager.officer.12345@gmail.com*. This manager can create other employees who can have their own email IDs. To change the manager's email address, open a terminal window in the folder containing the project and run the following:
+1. `python -i`
+2. `from app import db`
+3. `db.create_all()`
+4. `from app import Employee`
+5. `x = Employee(username='FooBar', email='foobar@gmail.com', password='12345678abcd', portfolio='Manager')`
+6. `db.session.add(x)`
+7. `db.session.commit()`
 
 ## Screenshots
 1. ![login](/Screenshots/login.png)
