@@ -6,7 +6,7 @@ import smtplib
 import random                                                                       #important imports
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = 'd13097e82dbca14f1fb48efab9ca5ac0'
+app.config['SECRET_KEY'] = ''                                                       #secret key
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'                         #defining database file
 
 db = SQLAlchemy(app)
